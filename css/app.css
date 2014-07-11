@@ -5121,37 +5121,34 @@ th.hide-for-touch {
 body {
   background-color: #E6E6E6; }
 
-.postfix.button {
-  background-color: rgba(9, 189, 189, 0.55);
-  color: #E6E6E6; }
-
-input[type="text"] {
-  background-color: #e6e6e6;
-  border: 0 solid #cccccc;
-  box-shadow: inset 1px 1px 1px 1px rgba(0, 0, 0, 0.1); }
-
+/* BOTH TEXT LAYERS */
+/* Universal Styles */
 .lrgtxt {
   font-family: 'Lato', sans-serif;
-  text-align: center;
   line-height: 0.8;
-  font-size: 11em; }
+  font-size: 11em;
+  margin-left: -0.05em; }
   @media only screen and (max-width: 40em) {
     .lrgtxt {
-      font-size: 8em; } }
+      font-size: 6em;
+      margin-left: 0.5em; } }
 
-/* Contains all text in layer one */
+/* Selects and spaces by line */
+.line1 {
+  letter-spacing: 0.02em; }
+
+.line2 {
+  letter-spacing: 0.1em; }
+
+.line3 {
+  letter-spacing: 0.05em; }
+
+/* TOP LAYER */
 .textb {
   margin-top: 1.5em;
   position: relative;
   z-index: 99;
-  /* Selects by line */
-  /* Selects by word, alternating  */ }
-  .textb .line1 {
-    letter-spacing: 0.03em; }
-  .textb .line3 {
-    letter-spacing: 0.07em; }
-  .textb .line4 {
-    letter-spacing: 0.1em; }
+  /* Selects by word, changes color  */ }
   .textb .c1 {
     color: transparent;
     text-shadow: 0 0 0.65px rgba(189, 9, 9, 0.55); }
@@ -5162,17 +5159,18 @@ input[type="text"] {
     color: transparent;
     text-shadow: 0 0 0.65px rgba(99, 9, 189, 0.55); }
 
-/* Contains all text in layer two */
+/* BOTTOM LAYER */
 .texta {
-  margin-top: -46em;
+  margin-top: -37em;
   position: relative;
   z-index: 0;
-  /* Selects all text */
-  /* Selects by line */ }
+  /* Flips text and adds true inset */
+  /* Adjusts for transform margin */ }
   @media only screen and (max-width: 40em) {
     .texta {
-      margin-top: -34.5em; } }
+      margin-top: -21em; } }
   .texta .lrgtxt {
+    text-align: right;
     -webkit-transform: rotateY(180deg);
     -moz-transform: rotateY(180deg);
     -o-transform: rotateY(180deg);
@@ -5183,13 +5181,18 @@ input[type="text"] {
     background-clip: text;
     color: transparent;
     text-shadow: rgba(255, 255, 255, 0.5) 0px 3px 3px; }
-  .texta .line1 {
-    letter-spacing: 0.03em; }
-  .texta .line3 {
-    letter-spacing: 0.07em; }
-  .texta .line4 {
-    letter-spacing: 0.1em; }
+  .texta .line3, .texta .line4 {
+    margin-right: -1em; }
 
-/* Access Input Line */
+/* ACCESS CODE INPUT */
 .access {
-  margin-top: 1.5em; }
+  margin-top: 1.8em; }
+
+.postfix.button {
+  background-color: rgba(9, 189, 189, 0.55);
+  color: #E6E6E6; }
+
+input[type="text"] {
+  background-color: #e6e6e6;
+  border: 0 solid #cccccc;
+  box-shadow: inset 1px 1px 1px 1px rgba(0, 0, 0, 0.1); }

@@ -2,44 +2,40 @@ body {
 	background-color: #E6E6E6;
 }
 
-.postfix.button { 
-	background-color: rgba(9, 189, 189, 0.55);
-	color: #E6E6E6; }
+/* BOTH TEXT LAYERS */
 
-input[type="text"] { 
-	background-color: #e6e6e6;
-	border: 0 solid #cccccc;
-	box-shadow: inset 1px 1px 1px 1px rgba(0, 0, 0, 0.1);
- }
-
+/* Universal Styles */
 .lrgtxt {
 	font-family: 'Lato', sans-serif;
-	text-align: center;
 	line-height: 0.8;
 	font-size: 11em;
-	@media #{$small-only} { font-size: 8em; }
+	margin-left: -0.05em;
+	@media #{$small-only} { 
+		font-size: 6em;
+		margin-left: 0.5em;
+		}
 }
 
-/* Contains all text in layer one */
+/* Selects and spaces by line */
+.line1 {
+	letter-spacing: 0.02em;	
+}
+.line2 {
+	letter-spacing: 0.1em;
+}
+.line3 {
+	letter-spacing: 0.05em;
+}
+
+
+/* TOP LAYER */
 .textb {
 	margin-top: 1.5em;
 	position: relative;
 	z-index: 99;
 
 
-	/* Selects by line */
-	.line1 {
-		letter-spacing: 0.03em;	
-	}
-	.line3 {
-		letter-spacing: 0.07em;
-	}
-	.line4 {
-		letter-spacing: 0.1em;
-	}
-
-
-	/* Selects by word, alternating  */
+	/* Selects by word, changes color  */
 	.c1 {
 		color: transparent;
 		text-shadow: 0 0 0.65px rgba(189, 9, 9, 0.55);
@@ -55,16 +51,17 @@ input[type="text"] {
 }
 
 
-/* Contains all text in layer two */
+/* BOTTOM LAYER */
 .texta {
-	margin-top: -46em;
-	@media #{$small-only} { margin-top: -34.5em; }
+	margin-top: -37em;
+	@media #{$small-only} { margin-top: -21em; }
 	position: relative;
 	z-index: 0;
 
 
-	/* Selects all text */
+	/* Flips text and adds true inset */
 	.lrgtxt {
+		text-align: right;
 		-webkit-transform:rotateY(180deg);
   		-moz-transform:rotateY(180deg);
   		-o-transform:rotateY(180deg);
@@ -77,19 +74,20 @@ input[type="text"] {
 		text-shadow: rgba(255,255,255,0.5) 0px 3px 3px;
 	}
 
-
-	/* Selects by line */
-	.line1 {
-		letter-spacing: 0.03em;	
-	}
-	.line3 {
-		letter-spacing: 0.07em;
-	}
-	.line4 {
-		letter-spacing: 0.1em;
-	}
+	/* Adjusts for transform margin */
+	.line3, .line4 { margin-right: -1em;}
 
 }
 
-/* Access Input Line */
-.access { margin-top: 1.5em; }
+/* ACCESS CODE INPUT */
+.access { margin-top: 1.8em; }
+
+.postfix.button { 
+	background-color: rgba(9, 189, 189, 0.55);
+	color: #E6E6E6; }
+
+input[type="text"] { 
+	background-color: #e6e6e6;
+	border: 0 solid #cccccc;
+	box-shadow: inset 1px 1px 1px 1px rgba(0, 0, 0, 0.1);
+ }
