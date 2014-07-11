@@ -8,12 +8,10 @@ body {
 .lrgtxt {
 	font-family: 'Lato', sans-serif;
 	line-height: 0.8;
-	font-size: 11em;
+	font-size: 6em;
 	margin-left: -0.05em;
-	@media #{$small-only} { 
-		font-size: 6em;
-		/*margin-left: 0.25em;*/
-		}
+	@media #{$medium-only} { font-size: 8em; }
+	@media #{$large-up} { font-size: 11em; }
 }
 
 /* Selects and spaces by line */
@@ -53,8 +51,9 @@ body {
 
 /* BOTTOM LAYER */
 .texta {
-	margin-top: -37em;
-	@media #{$small-only} { margin-top: -21em; }
+	margin-top: -21em;
+	@media #{$medium-only} { margin-top: -27.5em; }
+	@media #{$large-up} { margin-top: -37em; }
 	position: relative;
 	z-index: 0;
 
@@ -80,7 +79,9 @@ body {
 }
 
 /* ACCESS CODE INPUT */
-.access { margin-top: 1.8em; }
+.access { 
+	margin-top: 1.8em;
+	@media #{$small-only} {float: left !important;}
 
 .postfix.button { 
 	background-color: rgba(9, 189, 189, 0.55);
