@@ -5131,7 +5131,7 @@ body {
   @media only screen and (max-width: 40em) {
     .lrgtxt {
       font-size: 6em;
-      margin-left: 0.25em; } }
+      /*margin-left: 0.25em;*/ } }
 
 /* Selects and spaces by line */
 .line1 {
