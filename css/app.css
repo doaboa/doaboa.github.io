@@ -5156,7 +5156,11 @@ th.hide-for-touch {
     font-size: 12em;
     text-align: center;
     line-height: 0.8;
-    color: black; }
+    color: black;
+    -webkit-transform: rotateY(180deg);
+    -moz-transform: rotateY(180deg);
+    -o-transform: rotateY(180deg);
+    -ms-transform: rotateY(180deg); }
   .texta .line1 {
     letter-spacing: 0.03em; }
   .texta .line3 {
