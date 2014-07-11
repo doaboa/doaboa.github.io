@@ -1,6 +1,8 @@
 /* Contains all text in layer one */
 .textb {
 	margin-top: 1.5em;
+	position: relative;
+	z-index: 99;
 
 	/* Selects all text */
 	.lrgtxt {
@@ -38,6 +40,8 @@
 /* Contains all text in layer two */
 .texta {
 	margin-top: -50.5em;
+	position: relative;
+	z-index: 0;
 
 
 	/* Selects all text */
