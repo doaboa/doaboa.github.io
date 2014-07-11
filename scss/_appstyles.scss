@@ -1,0 +1,64 @@
+/* Contains all text in layer one */
+.textb {
+	margin-top: 1.5em;
+
+	/* Selects all text */
+	.lrgtxt {
+		font-family: 'Lato', sans-serif;
+		font-size: 12em;
+		text-align: center;
+		line-height: 0.8;
+	}
+
+
+	/* Selects by line */
+	.line1 {
+		letter-spacing: 0.03em;	
+	}
+	.line3 {
+		letter-spacing: 0.07em;
+	}
+	.line4 {
+		letter-spacing: 0.1em;
+	}
+
+
+	/* Selects by word, alternating  */
+	.c1 {
+		color: transparent;
+		text-shadow: 0 0 0.75px rgba(189, 9, 9, 0.9);
+	}
+	.c2 {
+		color: transparent;
+		text-shadow: 0 0 0.75px rgba(9, 189, 189, 0.9);
+	}
+}
+
+
+/* Contains all text in layer two */
+.texta {
+	margin-top: -50.5em;
+
+
+	/* Selects all text */
+	.lrgtxt {
+		font-family: 'Lato', sans-serif;
+		font-size: 12em;
+		text-align: center;
+		line-height: 0.8;
+		color: black;
+	}
+
+
+	/* Selects by line */
+	.line1 {
+		letter-spacing: 0.03em;	
+	}
+	.line3 {
+		letter-spacing: 0.07em;
+	}
+	.line4 {
+		letter-spacing: 0.1em;
+	}
+
+}
