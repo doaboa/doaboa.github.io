@@ -17,7 +17,7 @@ input[type="text"] {
 	text-align: center;
 	line-height: 0.8;
 	font-size: 12em;
-	@media #{$small-only} { font-size: 10em; }
+	@media #{$small-only} { font-size: 8em; }
 }
 
 .access { margin-top: 1.5em; }
