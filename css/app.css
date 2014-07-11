@@ -5134,13 +5134,10 @@ input[type="text"] {
   font-family: 'Lato', sans-serif;
   text-align: center;
   line-height: 0.8;
-  font-size: 12em; }
+  font-size: 11em; }
   @media only screen and (max-width: 40em) {
     .lrgtxt {
       font-size: 8em; } }
-
-.access {
-  margin-top: 1.5em; }
 
 /* Contains all text in layer one */
 .textb {
@@ -5167,7 +5164,7 @@ input[type="text"] {
 
 /* Contains all text in layer two */
 .texta {
-  margin-top: -50.5em;
+  margin-top: -46em;
   position: relative;
   z-index: 0;
   /* Selects all text */
@@ -5192,3 +5189,7 @@ input[type="text"] {
     letter-spacing: 0.07em; }
   .texta .line4 {
     letter-spacing: 0.1em; }
+
+/* Access Input Line */
+.access {
+  margin-top: 1.5em; }
