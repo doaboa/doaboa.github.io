@@ -27,6 +27,14 @@ var app = (function(document, $) {
 // redirects based on passcode entered
 $(function() {
 	'use strict'
+
+	$(".enterAccess").keypress(function(event){
+    	if(event.keyCode == 13){
+        	event.preventDefault();
+        		$(".button").click();
+    		}
+	});
+
 	$('.button').click(function () {
 		// grab input, make all letters lowercase
 		var input = ($('input:text').val()).toLowerCase();
