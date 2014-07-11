@@ -80,15 +80,24 @@ body {
 
 /* ACCESS CODE INPUT */
 .access { 
-	margin-top: 1.8em;
+	margin-top: 2em;
 	@media #{$small-only} {float: left !important;}
+}
 
 .postfix.button { 
 	background-color: rgba(9, 189, 189, 0.55);
-	color: #E6E6E6; }
+	color: #E6E6E6; 
+}
 
 input[type="text"] { 
 	background-color: #e6e6e6;
 	border: 0 solid #cccccc;
 	box-shadow: inset 1px 1px 1px 1px rgba(0, 0, 0, 0.1);
+ }
+
+ /* Popup */
+ #wrongCode {
+ 	width: 30%;
+ 	margin: 0px auto;
+ 	left: 35%;
  }
