@@ -23,3 +23,19 @@ var app = (function(document, $) {
 	app.init();
 
 })();
+
+// redirects based on passcode entered
+$(function() {
+	$('.gbu').click(function () {
+		// grab input, make all letters lowercase
+		var input = ($('input:text').val()).toLowerCase();
+		// evaluate input, append to URL if valid
+		if (input == "hello") {
+			window.location.href = "http://www.hellodoa.com/" + input;
+		}
+		// give error if not valid
+		else {
+			alert("Incorrect Access Code");
+		}
+	});
+});
