@@ -5118,6 +5118,9 @@ th.hide-for-touch {
   th.show-for-print {
     display: table-cell !important; } }
 
+body {
+  background-color: #E6E6E6; }
+
 /* Contains all text in layer one */
 .textb {
   margin-top: 1.5em;
@@ -5139,10 +5142,10 @@ th.hide-for-touch {
     letter-spacing: 0.1em; }
   .textb .c1 {
     color: transparent;
-    text-shadow: 0 0 0.75px rgba(189, 9, 9, 0.9); }
+    text-shadow: 0 0 0.65px rgba(189, 9, 9, 0.55); }
   .textb .c2 {
     color: transparent;
-    text-shadow: 0 0 0.75px rgba(9, 189, 189, 0.9); }
+    text-shadow: 0 0 0.65px rgba(9, 189, 189, 0.55); }
 
 /* Contains all text in layer two */
 .texta {
@@ -5156,11 +5159,16 @@ th.hide-for-touch {
     font-size: 12em;
     text-align: center;
     line-height: 0.8;
-    color: black;
     -webkit-transform: rotateY(180deg);
     -moz-transform: rotateY(180deg);
     -o-transform: rotateY(180deg);
-    -ms-transform: rotateY(180deg); }
+    -ms-transform: rotateY(180deg);
+    background-color: #CCCCCC;
+    -webkit-background-clip: text;
+    -moz-background-clip: text;
+    background-clip: text;
+    color: transparent;
+    text-shadow: rgba(255, 255, 255, 0.5) 0px 3px 3px; }
   .texta .line1 {
     letter-spacing: 0.03em; }
   .texta .line3 {
