@@ -5121,19 +5121,34 @@ th.hide-for-touch {
 body {
   background-color: #E6E6E6; }
 
+.postfix.button {
+  background-color: rgba(9, 189, 189, 0.55);
+  color: #E6E6E6; }
+
+input[type="text"] {
+  background-color: #e6e6e6;
+  border: 0 solid #cccccc;
+  box-shadow: inset 1px 1px 1px 1px rgba(0, 0, 0, 0.1); }
+
+.lrgtxt {
+  font-family: 'Lato', sans-serif;
+  text-align: center;
+  line-height: 0.8;
+  font-size: 12em; }
+  @media only screen and (max-width: 40em) {
+    .lrgtxt {
+      font-size: 8em; } }
+
+.access {
+  margin-top: 1.5em; }
+
 /* Contains all text in layer one */
 .textb {
   margin-top: 1.5em;
   position: relative;
   z-index: 99;
-  /* Selects all text */
   /* Selects by line */
   /* Selects by word, alternating  */ }
-  .textb .lrgtxt {
-    font-family: 'Lato', sans-serif;
-    font-size: 12em;
-    text-align: center;
-    line-height: 0.8; }
   .textb .line1 {
     letter-spacing: 0.03em; }
   .textb .line3 {
@@ -5154,11 +5169,10 @@ body {
   z-index: 0;
   /* Selects all text */
   /* Selects by line */ }
+  @media only screen and (max-width: 40em) {
+    .texta {
+      margin-top: -34.5em; } }
   .texta .lrgtxt {
-    font-family: 'Lato', sans-serif;
-    font-size: 12em;
-    text-align: center;
-    line-height: 0.8;
     -webkit-transform: rotateY(180deg);
     -moz-transform: rotateY(180deg);
     -o-transform: rotateY(180deg);
