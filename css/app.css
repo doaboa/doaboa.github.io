@@ -5161,6 +5161,9 @@ input[type="text"] {
   .textb .c2 {
     color: transparent;
     text-shadow: 0 0 0.65px rgba(9, 189, 189, 0.55); }
+  .textb .c3 {
+    color: transparent;
+    text-shadow: 0 0 0.65px rgba(99, 9, 189, 0.55); }
 
 /* Contains all text in layer two */
 .texta {
