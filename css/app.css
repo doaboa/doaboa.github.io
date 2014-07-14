@@ -5209,4 +5209,13 @@ input[type="text"] {
 #wrongCode {
   width: 30%;
   margin: 0px auto;
-  left: 35%; }
+  left: 35%;
+  background-color: #e6e6e6; }
+  #wrongCode p {
+    text-align: center; }
+  #wrongCode a {
+    color: rgba(99, 9, 189, 0.55); }
+
+.dontHave {
+  text-align: center;
+  color: red; }

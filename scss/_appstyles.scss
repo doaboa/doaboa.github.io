@@ -100,4 +100,12 @@ input[type="text"] {
  	width: 30%;
  	margin: 0px auto;
  	left: 35%;
+ 	p {text-align: center;}
+ 	a {color:rgba(99, 9, 189, 0.55);}
+ 	background-color: #e6e6e6;
+ }
+
+ .dontHave {
+ 	text-align: center;
+ 	color: red;
  }
