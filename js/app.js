@@ -36,15 +36,16 @@ $(function() {
     		}
 	});
 
-	//var codes = "columbia sneakpeek";
+	// string of approved passcodes
+	var codes = "columbia sneakpeek";
 	$('.button').click(function () {
 		// grab input, make all letters lowercase
 		var input = ($('input:text').val()).toLowerCase();
-		// evaluate input, append to URL if valid
-		if (input === 'columbia') {
-			window.location.href = 'http://www.hellodoa.com/' + input;
+		// evaluate input to see if it is contained in codes, if so append to URL if valid
+		if ( codes.indexOf(input) !== -1 ) {
+			window.location.href = document.URL + input + '.html';
 		}
-		// give error if not valid
+		// if not contained, open error modal
 		else {
 			$('#wrongCode').foundation('reveal', 'open');
 		}
