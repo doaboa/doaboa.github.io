@@ -45,11 +45,10 @@ $(function() {
 	$('.button').click(function () {
 		// grab input, make all letters lowercase
 		var input = ($('input:text').val()).toLowerCase();
-		// evaluate input to see if it is contained in codes, if so append to URL if valid
+		// evaluate input to see if it is contained in codes, if so append to URL
 		if ( codes.indexOf(input) !== -1 ) {
-			var root = location.protocol + '//' + location.host;
-			// can use document.URL instead of manual URL once I get godaddy to route correctly
-			window.location.href = root + '/' + input + '.html';
+			// reconstruct page url & redirect. chose location.protocol and .host over document.URL in case of /# after failed pw entry
+			window.location.href = location.protocol + '//' + location.host + '/' + input + '.html';
 		}
 		// if not contained, open error modal
 		else {
