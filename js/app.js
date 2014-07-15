@@ -47,8 +47,9 @@ $(function() {
 		var input = ($('input:text').val()).toLowerCase();
 		// evaluate input to see if it is contained in codes, if so append to URL if valid
 		if ( codes.indexOf(input) !== -1 ) {
+			var root = location.protocol + '//' + location.host;
 			// can use document.URL instead of manual URL once I get godaddy to route correctly
-			window.location.href = document.URL + input + '.html';
+			window.location.href = root + input + '.html';
 		}
 		// if not contained, open error modal
 		else {
