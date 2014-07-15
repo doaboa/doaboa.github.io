@@ -49,7 +49,7 @@ $(function() {
 		if ( codes.indexOf(input) !== -1 ) {
 			var root = location.protocol + '//' + location.host;
 			// can use document.URL instead of manual URL once I get godaddy to route correctly
-			window.location.href = root + input + '.html';
+			window.location.href = root + '/' + input + '.html';
 		}
 		// if not contained, open error modal
 		else {
