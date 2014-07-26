@@ -78,11 +78,17 @@ body {
 
 }
 
-/* ACCESS CODE INPUT */
+/* ACCESS CODE INPUT & DON'T HAVE TEXT */
 .access { 
 	margin-top: 2em;
 	@media #{$small-only} {float: left !important;}
+
+	text-align: center;
 }
+
+ .dontHave {
+ 	font-size: 0.75em;
+ }
 
 .postfix.button { 
 	background-color: rgba(9, 189, 189, 0.55);
@@ -105,10 +111,52 @@ input[type="text"] {
  	background-color: #e6e6e6;
  }
 
- .dontHave {
- 	text-align: center;
- 	color: red;
- }
-
 
  /* COLUMBIA */
+
+ .contain { 
+ 	/* Can set width and height */
+ 	background: 
+    linear-gradient(
+      rgba(255, 0, 0, 0.45), 
+      rgba(255, 0, 0, 0.45)
+    ),
+    url(images/IMG_5754.jpg); 
+ }
+
+ #header { 
+ 	margin-top: 1em; 
+ 	font-family: 'Lato', sans-serif;
+ }
+
+ .headertxt {  
+ 	@media #{$small-only} { display: none; }
+ }
+
+.tagContact { text-align: right; }
+ .lastName { color: #CC0000;}
+
+ .greeting { 
+ 	text-align: justify;
+ 	padding: 2em 0 1em 0;
+ 	h2, h3 { 
+ 		text-align: justify;
+ 		background-color: yellow;
+ 		padding: 0 1em 0 15%;
+ 	}
+ }
+
+.circle
+{
+	width:6em;
+	height:6em;
+	border-radius:125px;
+	-moz-border-radius: 125px;
+	font-size:25px;
+	color:#fff;
+	line-height:6em;
+	text-align:center;
+	background:rgba(204, 0, 0, 0.5);
+	margin: 15% 0 0 15%;
+}
+
