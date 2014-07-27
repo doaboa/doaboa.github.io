@@ -5220,24 +5220,50 @@ input[type="text"] {
   #wrongCode a {
     color: rgba(99, 9, 189, 0.55); }
 
+.sneakPeek {
+  opacity: 0;
+  line-height: 2em;
+  transition: opacity 0.5s ease-in;
+  -moz-transition: opacity 0.5s ease-in;
+  -webkit-transition: opacity 0.5s ease-in; }
+
 /* COLUMBIA */
-.contain {
-  /* Can set width and height */
-  background: linear-gradient(rgba(255, 0, 0, 0.45), rgba(255, 0, 0, 0.45)), url(images/IMG_5754.jpg); }
+.fullWidth {
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+  max-width: initial; }
 
-#header {
-  margin-top: 1em;
-  font-family: 'Lato', sans-serif; }
+/* Sets height of header and overlay */
+.header {
+  background: url(../images/banr.jpg) no-repeat right bottom;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  height: 40em; }
 
-@media only screen and (max-width: 40em) {
-  .headertxt {
-    display: none; } }
+.overlay {
+  background-color: rgba(0, 0, 0, 0.5);
+  height: 40em;
+  position: absolute;
+  top: 0;
+  z-index: 2; }
 
-.tagContact {
-  text-align: right; }
-
-.lastName {
-  color: #CC0000; }
+.navigation {
+  background-color: rgba(0, 0, 0, 0.5);
+  height: 10%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 3; }
+  .navigation h3, .navigation h5 {
+    color: white; }
+  .navigation h3 {
+    padding-top: 3%; }
+  .navigation h5 {
+    text-align: right;
+    padding-top: 2%; }
 
 .greeting {
   text-align: justify;
@@ -5246,15 +5272,3 @@ input[type="text"] {
     text-align: justify;
     background-color: yellow;
     padding: 0 1em 0 15%; }
-
-.circle {
-  width: 6em;
-  height: 6em;
-  border-radius: 125px;
-  -moz-border-radius: 125px;
-  font-size: 25px;
-  color: #fff;
-  line-height: 6em;
-  text-align: center;
-  background: rgba(204, 0, 0, 0.5);
-  margin: 15% 0 0 15%; }

@@ -56,6 +56,10 @@ $(function() {
 		}
 	});
 
+	$('.dontHave').click(function(){
+		$('.sneakPeek').css('opacity', '1');
+	});
+
 
 // ***** RESUME PAGE *****
 
