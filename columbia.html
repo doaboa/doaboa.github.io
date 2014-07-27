@@ -4,7 +4,7 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Foundation project</title>
+    <title>Doa Jafri: Creative Developer</title>
     <!-- build:css css/libraries.min.css -->
     <link rel="stylesheet" href="bower_components/font-awesome/css/font-awesome.css">
     <!-- bower:css -->
@@ -25,11 +25,11 @@
   <div class="row fullWidth">
     <!-- Header & Overlay -->
     <div class="overlay small-12 columns"></div>
-    <div class="header small-12 columns">
+    <div id="header" class="header small-12 columns">
       <!-- Navigation -->
       <div class="navigation small-12 columns">
         <div class="navleft small-4 columns">
-          <h3> Doa Jafri </h3>
+          <h3><a href="#header"> Doa Jafri </a></h3>
         </div>
         <ul class="navright inline-list show-for-medium-up medium-8 columns">
           <li><a href="#contact">CONTACT</a></li>
@@ -41,11 +41,11 @@
         <div class="navdrop hide-for-medium-up small-8 columns">
             <a href="#" data-dropdown="drop1" class="menulink">MENU</a>
               <ul id="drop1" class="f-dropdown" data-dropdown-content>
-                <li><a href="#">OVERVIEW</a></li>
-                <li><a href="#">COVER LETTER</a></li>
-                <li><a href="#">EDUCATION & EXPERIENCE</a></li>
-                <li><a href="#">WORK</a></li>
-                <li><a href="#">CONTACT</a></li>
+                <li><a href="#overview">OVERVIEW</a></li>
+                <li><a href="#cole">COVER LETTER</a></li>
+                <li><a href="#eduexp">EDUCATION & EXPERIENCE</a></li>
+                <li><a href="#work">WORK</a></li>
+                <li><a href="#contact">CONTACT</a></li>
               </ul>
          </div>
       </div>
@@ -59,7 +59,7 @@
       </div>
     <!-- End Header -->
     </div>
-    <!-- Start Content -->
+    <!-- Start Content (Overview) -->
     <div id="overview" class="content small-12 columns">
       <div class="sectionName small-12 medium-4 columns">
         <h1>Overview</h1>
@@ -70,6 +70,7 @@
       </div>
     </div>
 
+    <!-- Cover Letter -->
     <div id="cole" class="content small-12 columns">
       <div class="sectionName small-12 medium-4 columns">
         <h1>Cover Letter</h1>
@@ -79,7 +80,8 @@
       <div class="section1b small-12 medium-4 columns">
       </div>
     </div>
-
+    
+    <!-- Education & Experience -->
     <div id="eduexp" class="content small-12 columns">
       <div class="sectionName small-12 medium-4 columns">
         <h1>Education & Experience</h1>
@@ -90,6 +92,7 @@
       </div>
     </div>
 
+    <!-- Work -->
     <div id="work" class="content small-12 columns">
       <div class="sectionName small-12 medium-4 columns">
         <h1>Work</h1>
@@ -100,6 +103,7 @@
       </div>
     </div>
 
+    <!-- Contact -->
     <div id="contact" class="content small-12 columns">
       <div class="sectionName small-12 medium-4 columns">
         <h1>Contact</h1>
@@ -109,7 +113,8 @@
       <div class="section1b small-12 medium-4 columns">
       </div>
     </div>
-
+  
+  <!-- Begin Footer -->
     <div class="footer small-12 columns">
       Hand-coded with <i class="fa fa-heart"></i> in Brooklyn by Doa Jafri © 2014
     </div>

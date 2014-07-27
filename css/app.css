@@ -5265,6 +5265,8 @@ input[type="text"] {
   .navigation a {
     color: white;
     float: right; }
+  .navigation .navleft a {
+    float: none; }
   .navigation .menulink {
     padding-top: 1em; }
   .navigation h3 {
