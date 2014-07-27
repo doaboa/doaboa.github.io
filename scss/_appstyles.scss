@@ -133,7 +133,7 @@ input[type="text"] {
 $headheight: 40em;
 
 .header {
-	background: url(../images/banr.jpg) no-repeat right bottom;
+	background: url(../images/banr.jpg) no-repeat left bottom;
 	-webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
@@ -147,37 +147,81 @@ $headheight: 40em;
 	position: absolute;
 	top: 0;
 	z-index: 2;
+	border-width: 5px;
+  border-bottom: 5px rgba(9, 189, 189, .9) solid;
 }
 
 .navigation {
-	background-color: rgba(0,0,0,.5);
-	height: 10%;
+	background-color: rgba(0,0,0,.2);
+	height: 5em;
+	@media #{$small-only} { height: 3em; }
 	position: fixed;
 	top:0;
 	left: 0;
 	z-index: 3;
 
-	h3, h5 {
+	a {
 		color: white;
+		float: right;
+	}
+
+	.menulink {
+		padding-top: 1em;
 	}
 
 	h3 {
 		padding-top: 3%;
+		color: white;
 	}
 
-	h5 { 
-		text-align: right;
-		padding-top: 2%;
+	.navright {
+		ul {
+			text-align: right;
+			float: clear;
+		}
+
+		li { 
+			color: white;
+			float: right;
+			padding-top: 3%;
+			padding-right: 1em;
+			font-size: 90%;
+		}
 	}
 }
 
  .greeting { 
+ 	margin-top: 27%;
  	text-align: justify;
  	padding: 2em 0 1em 0;
+ 	position: relative;
+ 	z-index: 2;
  	h2, h3 { 
  		text-align: justify;
- 		background-color: yellow;
+ 		background-color: rgba(9, 189, 189, .9);
  		padding: 0 1em 0 15%;
+ 		color: white;
  	}
  }
+
+.content {
+	margin-top: 5em;
+	padding-left: 5em;
+	h1 { font-weight: bold; }
+}
+
+#contact {
+	margin-bottom: 4em;
+}
+
+.footer {
+	text-align: center;
+	padding: 2em;
+	color: #E6E6E6;
+	letter-spacing: 1px;
+	background-color: rgba(9, 189, 189, .9);
+}
+
+
+
 

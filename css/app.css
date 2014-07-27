@@ -5236,7 +5236,7 @@ input[type="text"] {
 
 /* Sets height of header and overlay */
 .header {
-  background: url(../images/banr.jpg) no-repeat right bottom;
+  background: url(../images/banr.jpg) no-repeat left bottom;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
@@ -5248,27 +5248,62 @@ input[type="text"] {
   height: 40em;
   position: absolute;
   top: 0;
-  z-index: 2; }
+  z-index: 2;
+  border-width: 5px;
+  border-bottom: 5px rgba(9, 189, 189, 0.9) solid; }
 
 .navigation {
-  background-color: rgba(0, 0, 0, 0.5);
-  height: 10%;
+  background-color: rgba(0, 0, 0, 0.2);
+  height: 5em;
   position: fixed;
   top: 0;
   left: 0;
   z-index: 3; }
-  .navigation h3, .navigation h5 {
-    color: white; }
+  @media only screen and (max-width: 40em) {
+    .navigation {
+      height: 3em; } }
+  .navigation a {
+    color: white;
+    float: right; }
+  .navigation .menulink {
+    padding-top: 1em; }
   .navigation h3 {
-    padding-top: 3%; }
-  .navigation h5 {
+    padding-top: 3%;
+    color: white; }
+  .navigation .navright ul {
     text-align: right;
-    padding-top: 2%; }
+    float: clear; }
+  .navigation .navright li {
+    color: white;
+    float: right;
+    padding-top: 3%;
+    padding-right: 1em;
+    font-size: 90%; }
 
 .greeting {
+  margin-top: 27%;
   text-align: justify;
-  padding: 2em 0 1em 0; }
+  padding: 2em 0 1em 0;
+  position: relative;
+  z-index: 2; }
   .greeting h2, .greeting h3 {
     text-align: justify;
-    background-color: yellow;
-    padding: 0 1em 0 15%; }
+    background-color: rgba(9, 189, 189, 0.9);
+    padding: 0 1em 0 15%;
+    color: white; }
+
+.content {
+  margin-top: 5em;
+  padding-left: 5em; }
+  .content h1 {
+    font-weight: bold; }
+
+#contact {
+  margin-bottom: 4em; }
+
+.footer {
+  text-align: center;
+  padding: 2em;
+  color: #E6E6E6;
+  letter-spacing: 1px;
+  background-color: rgba(9, 189, 189, 0.9); }
