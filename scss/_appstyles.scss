@@ -139,11 +139,13 @@ $headheight: 40em;
   -o-background-size: cover;
   background-size: cover;
 	height: $headheight;
+	border-width: 5px;
+  border-bottom: 5px rgba(9, 189, 189, .9) solid;
 }
 
 .overlay {
 	background-color: rgba(0,0,0,.5);
-	height: $headheight;
+	height: 100%;
 	position: absolute;
 	top: 0;
 	z-index: 2;

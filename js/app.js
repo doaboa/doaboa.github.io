@@ -78,13 +78,25 @@ $(function() {
 
 	// darken overlay on scroll
 	$(window).scroll(function() { 
-		var $overlay = $('.overlay'); 
-		var windowScroll = $(this).scrollTop(); 
-		
-		$overlay.css({ 
-		'margin-top': - (windowScroll / 3) + "px", 
-		'opacity': 1 - (windowScroll / 550) 
-		}); 
-	}); 
+		var windowScroll = $(this).scrollTop();
 
-});
+		if (windowScroll < 550) {
+			$('.navigation').css({
+				'background-color': "rgba(0,0,0,0.2)"
+			});
+		} else {
+			$('.navigation').css({
+				'background-color': "rgba(0,0,0,.7)"
+			});
+		}
+
+		$('.overlay').css({ 
+			'margin-top': - (windowScroll / 3) + "px", 
+			'opacity': 1 - (windowScroll / 550)
+		}); 
+		});
+	});
+
+
+
+
