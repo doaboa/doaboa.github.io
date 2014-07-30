@@ -8,7 +8,7 @@ body {
 .lrgtxt {
 	font-family: 'Lato', sans-serif;
 	line-height: 0.8;
-	font-size: 6em;
+	font-size: 4em;
 	margin-left: -0.05em;
 	@media #{$medium-only} { font-size: 8em; }
 	@media #{$large-up} { font-size: 11em; }
@@ -51,7 +51,7 @@ body {
 
 /* BOTTOM LAYER */
 .texta {
-	margin-top: -21em;
+	margin-top: -14.75em;
 	@media #{$medium-only} { margin-top: -27.5em; }
 	@media #{$large-up} { margin-top: -37em; }
 	position: relative;

@@ -62,7 +62,7 @@ $(function() {
 
 // ***** RESUME PAGE *****
 
-	// animate links in nav
+	// animate link transitions in nav
 	$('a[href^="#"]').on('click',function (e) {
 	        e.preventDefault();
 

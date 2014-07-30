@@ -5126,7 +5126,7 @@ body {
 .lrgtxt {
   font-family: 'Lato', sans-serif;
   line-height: 0.8;
-  font-size: 6em;
+  font-size: 4em;
   margin-left: -0.05em; }
   @media only screen and (min-width:40.063em) and (max-width:64em) {
     .lrgtxt {
@@ -5163,7 +5163,7 @@ body {
 
 /* BOTTOM LAYER */
 .texta {
-  margin-top: -21em;
+  margin-top: -14.75em;
   position: relative;
   z-index: 0;
   /* Flips text and adds true inset */
