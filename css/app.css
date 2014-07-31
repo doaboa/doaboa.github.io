@@ -5310,6 +5310,9 @@ input[type="text"] {
   .content p {
     text-align: justify;
     margin-top: 1em; }
+  .content a {
+    /* Main color darkened, original lightness is 39% */
+    color: #078d8d; }
 
 #contact {
   margin-bottom: 4em; }
@@ -5319,7 +5322,7 @@ input[type="text"] {
   padding: 2em;
   color: #E6E6E6;
   letter-spacing: 1px;
-  background-color: rgba(9, 189, 189, 0.9); }
+  background-color: #09BDBD; }
 
 .subheader {
   padding-top: 0.5em; }

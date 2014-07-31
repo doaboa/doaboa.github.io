@@ -221,6 +221,11 @@ $headheight: 40em;
 		text-align: justify;
 		margin-top: 1em;
 	}
+
+	a {
+		/* Main color darkened, original lightness is 39% */
+		color: hsl(180,91,29);
+	}
 }
 
 #contact {
@@ -232,7 +237,7 @@ $headheight: 40em;
 	padding: 2em;
 	color: #E6E6E6;
 	letter-spacing: 1px;
-	background-color: rgba(9, 189, 189, .9);
+	background-color: #09BDBD;
 }
 
 .subheader {
