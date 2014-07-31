@@ -5333,8 +5333,13 @@ h6 {
 .push {
   height: 15em; }
 
-ul {
+.section1a ul {
   list-style-type: none; }
-  ul .fa {
+  .section1a ul .fa {
     font-size: 1.5em;
     margin-left: -0.5em; }
+
+.section1b ul {
+  list-style-type: none; }
+  .section1b ul a {
+    color: black; }

@@ -245,10 +245,19 @@ h6 {padding-top: 1em;}
 
 .push {height: 15em;}
 
-ul {
-	list-style-type: none;
+.section1a {
+	ul {
+		list-style-type: none;
 	.fa {
 		font-size: 1.5em;
 		margin-left: -.5em;
+		}
+	}
+}
+
+.section1b {
+	ul {
+		list-style-type: none;
+		a { color: black;}
 	}
 }
