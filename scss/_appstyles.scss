@@ -120,7 +120,7 @@ input[type="text"] {
  }
 
 
- /* COLUMBIA */
+ /* RESUME PAGE */
 
 .fullWidth {
    width: 100%;
@@ -212,8 +212,15 @@ $headheight: 40em;
 
 .content {
 	margin-top: 5em;
-	padding-left: 5em;
+	padding-left: 2em;
+	@media #{$large-only} {padding-left: 5em;}
+	@media #{$medium-only} { h1 { font-size: 2em;}}
 	h1 { font-weight: bold; }
+
+	p {
+		text-align: justify;
+		margin-top: 1em;
+	}
 }
 
 #contact {
@@ -228,6 +235,20 @@ $headheight: 40em;
 	background-color: rgba(9, 189, 189, .9);
 }
 
+.subheader {
+	padding-top: .5em;
+}
 
+h4 { padding-top: 1em;}
 
+h6 {padding-top: 1em;}
 
+.push {height: 15em;}
+
+ul {
+	list-style-type: none;
+	.fa {
+		font-size: 1.5em;
+		margin-left: -.5em;
+	}
+}
