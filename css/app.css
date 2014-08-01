@@ -5283,6 +5283,8 @@ input[type="text"] {
     padding-top: 3%;
     padding-right: 1em;
     font-size: 90%; }
+  .navigation #drop1 li {
+    float: right; }
 
 .greeting {
   margin-top: 27%;
