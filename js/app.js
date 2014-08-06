@@ -41,7 +41,7 @@ $(function() {
 	});
 
 	// string of approved passcodes
-	var codes = "sneakpeek";
+	var codes = "sneakpeek hbo bku";
 	$('.button').click(function () {
 		// grab input, make all letters lowercase
 		var input = ($('input:text').val()).toLowerCase();
