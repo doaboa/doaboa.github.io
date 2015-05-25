@@ -248,6 +248,9 @@ $headheight: 40em;
 
 .subheader {
 	padding-top: .5em;
+	width: 80%;
+  text-align: justify;
+  font-size: 1.1em;
 }
 
 h4 { padding-top: 1em;}
@@ -286,13 +289,24 @@ h6 {padding-top: 1em;}
 	    url(../images/recbg.jpg);
 	background-repeat: no-repeat;
 	background-size: cover;
-	padding: 6em;
+	padding: 6em 20em;
+	@media #{$medium-only} {padding: 4em;}
 	@media #{$small-only} {padding: 4em;}
 	text-align: center;
-	h2 {font-weight: bold;}
+	h2 {
+		font-weight: bold;
+		line-height: 1.5em;
+	}
 	h4 {margin-top: 2em;
 		color:#e6e6e6;}
 	a {color: hsl(180,91,19);}
 	margin-top: 4em;
 }
+
+/* Cover Letter */
+
+#cole p {
+	margin-right: 3em;
+}
+
 

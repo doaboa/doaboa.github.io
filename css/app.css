@@ -5327,7 +5327,11 @@ input[type="text"] {
   background-color: #09BDBD; }
 
 .subheader {
-  padding-top: 0.5em; }
+  padding-top: 0.5em; 
+  width: 80%;
+  text-align: justify;
+  font-size: 1.1em;
+}
 
 h4 {
   padding-top: 1em; }
@@ -5356,16 +5360,24 @@ h6 {
   background: linear-gradient(rgba(9, 189, 189, 0.85), rgba(9, 189, 189, 0.85)), url(../images/recbg.jpg);
   background-repeat: no-repeat;
   background-size: cover;
-  padding: 6em;
+  padding: 6em 20em;
   text-align: center;
   margin-top: 4em; }
-  @media only screen and (max-width: 40em) {
+  @media only screen and (max-width: 80em) {
     #rec {
       padding: 4em; } }
   #rec h2 {
-    font-weight: bold; }
+    font-weight: bold; 
+    line-height: 1.5em;
+  }
   #rec h4 {
     margin-top: 2em;
     color: #e6e6e6; }
   #rec a {
     color: #045d5d; }
+
+
+    
+#cole p {
+  margin-right: 3em;
+}
